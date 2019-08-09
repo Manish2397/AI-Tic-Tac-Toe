@@ -30,7 +30,7 @@ def whoGoesFirst():
 
 def playAgain():
     
-    print('dobara kheloge??(yes or no)')
+    print('Want to Play again??(yes or no)')
     return input().lower().startswith('y')
 
 def makeMove(board, letter, move):
@@ -140,7 +140,7 @@ def main():
     
                 if isWinner(theBoard, playerLetter):
                     drawBoard(theBoard)
-                    print("tu jeet gya bhai!!!")
+                    print("You Won!!!")
                     gameIsPlaying = False
                 else:
                     if isBoardFull(theBoard):
@@ -157,7 +157,7 @@ def main():
     
                 if isWinner(theBoard, computerLetter):
                     drawBoard(theBoard)
-                    print("cpu se haar gye aap to!!")
+                    print("Sorry,You Lose!!")
                     gameIsPlaying = False
                 else:
                     if isBoardFull(theBoard):
